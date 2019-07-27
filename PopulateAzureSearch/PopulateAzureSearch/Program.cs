@@ -50,7 +50,7 @@ namespace PopulateAzureSearch
 
         private static async Task WriteToSiAsync(IEnumerable<Book> listBook)
         {
-            SearchServiceClient serviceClient = new SearchServiceClient("librarysearchservice", new SearchCredentials("B886F1DAC41FB38BA0126061A30AE32A"));
+            SearchServiceClient serviceClient = new SearchServiceClient("librarysearchservice", new SearchCredentials("<api-key>"));
             var indexClient = serviceClient.Indexes.GetClient("booksindex");
             var act = listBook.Select(x => IndexAction.Upload<Book>(x));
             await indexClient.Documents.IndexAsync(IndexBatch.New(act));
