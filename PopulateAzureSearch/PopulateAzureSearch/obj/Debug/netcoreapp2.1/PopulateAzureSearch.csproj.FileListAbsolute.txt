@@ -1,0 +1,11 @@
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\bin\Debug\netcoreapp2.1\PopulateAzureSearch.deps.json
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\bin\Debug\netcoreapp2.1\PopulateAzureSearch.runtimeconfig.json
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\bin\Debug\netcoreapp2.1\PopulateAzureSearch.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\bin\Debug\netcoreapp2.1\PopulateAzureSearch.dll
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\obj\Debug\netcoreapp2.1\PopulateAzureSearch.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\obj\Debug\netcoreapp2.1\PopulateAzureSearch.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\obj\Debug\netcoreapp2.1\PopulateAzureSearch.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\obj\Debug\netcoreapp2.1\PopulateAzureSearch.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\bin\Debug\netcoreapp2.1\PopulateAzureSearch.pdb
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\obj\Debug\netcoreapp2.1\PopulateAzureSearch.dll
+C:\Users\Administrator\source\repos\PopulateAzureSearch\PopulateAzureSearch\obj\Debug\netcoreapp2.1\PopulateAzureSearch.pdb
