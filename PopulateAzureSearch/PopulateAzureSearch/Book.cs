@@ -6,7 +6,6 @@ using Newtonsoft.Json;
 
 namespace PopulateAzureSearch
 {
-
     public class Book
     {
         [System.ComponentModel.DataAnnotations.Key]
@@ -14,10 +13,10 @@ namespace PopulateAzureSearch
         public string id { get; set; }
 
         [IsSearchable, IsSortable, IsFilterable]
-        public string BookName { get; set; }
+        public string Title { get; set; }
 
         [IsSearchable, IsSortable, IsFilterable]
-        public string AuthorName { get; set; }
+        public string Author { get; set; }
 
         [IsSearchable, IsFilterable]
         public string[] Category { get; set; }
@@ -29,7 +28,9 @@ namespace PopulateAzureSearch
 
         public override string ToString()
         {
-            return "id:"+ id + "\nBookName:"+ BookName + "\nAuthorName:" + AuthorName + "\nCategory:" + string.Join(", ", Category) + "\nLanguage:"+ Language + "\nLinks:" + string.Join(", ", Links);
+            //return "id:"+ id + "\nTitle:"+ Title + "\nAuthor:" + Author + "\nSubject:" + string.Join(", ", Subject) + "\nLanguage:"+ Language + "\nLinks:" + string.Join(", ", Link);
+
+            return "id:" + id + "\nTitle:" + Title;
         }
     }
 }

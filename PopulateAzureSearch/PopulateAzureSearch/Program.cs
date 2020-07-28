@@ -50,10 +50,11 @@ namespace PopulateAzureSearch
 
         private static async Task WriteToSiAsync(IEnumerable<Book> listBook)
         {
-            SearchServiceClient serviceClient = new SearchServiceClient("librarysearchservice", new SearchCredentials("<api-key>"));
+            SearchServiceClient serviceClient = new SearchServiceClient("librarysearchservice", new SearchCredentials("471B10EC0E9A898A71401CB6770A16AA"));
             var indexClient = serviceClient.Indexes.GetClient("booksindex");
             var act = listBook.Select(x => IndexAction.Upload<Book>(x));
-            await indexClient.Documents.IndexAsync(IndexBatch.New(act));
+            var batch = IndexBatch.New(act);
+            await indexClient.Documents.IndexAsync(batch);
         }
         private static Book ParseResponse(string content)
         {
@@ -61,8 +62,8 @@ namespace PopulateAzureSearch
             JObject jObject = JObject.Parse(content);
             JToken jBook = jObject["metadata"];
             book.id = bookId.ToString();
-            book.BookName = string.Join(", ", jBook["title"]);
-            book.AuthorName = string.Join(", ", jBook["author"]);
+            book.Title = string.Join(", ", jBook["title"]);
+            book.Author = string.Join(", ", jBook["author"]);
             book.Language = string.Join(", ", jBook["language"]);
             string category = string.Join(", ", jBook["subject"]);
             book.Category = category.Split(",");
