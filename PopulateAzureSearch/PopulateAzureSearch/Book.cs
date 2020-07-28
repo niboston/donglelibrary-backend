@@ -1,11 +1,12 @@
-﻿using System;
-using Microsoft.Azure.Search;
-using Microsoft.Azure.Search.Models;
-using Microsoft.Spatial;
-using Newtonsoft.Json;
+﻿using Microsoft.Azure.Search;
 
 namespace PopulateAzureSearch
 {
+    /// <summary>
+    /// This class represents the Book Index which is used by the Azure Search Service. 
+    /// We pull books from the Gutenberg database and extract the data into this model
+    /// in order to pass it to the Azure Search Service. 
+    /// </summary>
     public class Book
     {
         [System.ComponentModel.DataAnnotations.Key]
@@ -28,9 +29,7 @@ namespace PopulateAzureSearch
 
         public override string ToString()
         {
-            //return "id:"+ id + "\nTitle:"+ Title + "\nAuthor:" + Author + "\nSubject:" + string.Join(", ", Subject) + "\nLanguage:"+ Language + "\nLinks:" + string.Join(", ", Link);
-
-            return "id:" + id + "\nTitle:" + Title;
+            return "id:" + id + "\nTitle:" + Title + "\nAuthor:" + Author + "\nSubject:" + string.Join(", ", Category) + "\nLanguage:" + Language + "\nLinks:" + string.Join(", ", Links);
         }
     }
 }
